@@ -1,0 +1,21 @@
+@use '../App.scss';
+
+.search-bar-wrapper {
+  width: 100%;
+  max-width: 800px;
+  background-color: App.$ligthBackgroundColor;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-input{
+    background-color: red;
+  }
+
+  .search-button{
+    width: 150px;
+    background-color: #808080;
+    color: #FFFFFF;
+    border: 1px solid #808080;
+  }
+}

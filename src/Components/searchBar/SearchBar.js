@@ -1,7 +1,7 @@
-import "./searchBar.css";
+import "./searchBar.scss";
 import "@ui5/webcomponents/dist/Input.js";
 import "@ui5/webcomponents/dist/Button";
-import { Button, Input } from "@ui5/webcomponents-react";
+import { Button, FlexBox, FlexBoxJustifyContent, Input } from "@ui5/webcomponents-react";
 import { useState } from "react";
 import { getSearch } from "../../Services/api";
 
@@ -21,11 +21,13 @@ export default function SearchBar() {
   }
 
   return (
-
-    <div className="search-bar-wrapper" >
+    <FlexBox
+      className="search-bar-wrapper"
+      justifyContent={FlexBoxJustifyContent.SpaceBetween}
+    >
       <Input className="search-input" placeholder="Search by film name" value={inputValue} onInput={(e) => setInputValue(e.target.value)}></Input>
-      <ui5-button className="button" onClick={() => getMovieTitle()}>Search</ui5-button>
-      <Button className="button" onClick={() => setInputValue('')}>Reset</Button>
-    </div >
+      <Button className="search-button" onClick={() => getMovieTitle()}>Search</Button>
+      <Button className="search-button" onClick={() => setInputValue('')}>Reset</Button>
+    </FlexBox>
   );
 }

@@ -3,19 +3,20 @@ import {
   FlexBoxAlignItems,
   FlexBoxDirection,
   FlexBoxJustifyContent,
-  ShellBar
 } from '@ui5/webcomponents-react';
-import './App.css';
-import MovieInfo from './Components/movieInfos/MovieInfo';
-import PageTitle from './Components/pageTitle/PageTitle';
-import SearchBar from './Components/searchBar/SearchBar';
+import './App.scss';
+import Footer from './Footer/Footer';
+import Header from './Header/Header';
+import MovieInfo from './movieInfos/MovieInfo';
+import PageTitle from './pageTitle/PageTitle';
+import SearchBar from './searchBar/SearchBar';
 
 function App() {
   return (
     <>
-      <ShellBar primaryTitle="UI5 Web Components for React Template" />
+      <Header />
       <FlexBox
-        style={{ width: '100%', height: '100vh' }}
+        className='main-container'
         direction={FlexBoxDirection.Column}
         justifyContent={FlexBoxJustifyContent.Center}
         alignItems={FlexBoxAlignItems.Center}
@@ -24,6 +25,7 @@ function App() {
         <SearchBar />
         <MovieInfo />
       </FlexBox>
+      <Footer />
     </>
   );
 }

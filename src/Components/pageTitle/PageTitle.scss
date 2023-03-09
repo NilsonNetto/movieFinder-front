@@ -1,0 +1,14 @@
+@use '../App.scss';
+
+.title-wrapper {
+  width: 100%;
+  max-width: 800px;
+  height: 100px;
+  background-color: App.$ligthBackgroundColor;
+  color: App.$textColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  
+}

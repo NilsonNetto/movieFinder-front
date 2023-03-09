@@ -1,0 +1,7 @@
+@use '../App.scss';
+
+.footer{
+  height: 100px;
+  background-color: App.$backgroundColor;
+  color: App.$textColor;
+}

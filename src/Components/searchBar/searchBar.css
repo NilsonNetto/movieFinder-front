@@ -1,9 +1,0 @@
-.search-bar-wrapper {
-  width: 100%;
-  max-width: 800px;
-  background-color: #61dafb;
-  color: red;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
