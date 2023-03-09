@@ -3,11 +3,12 @@ import {
   FlexBoxAlignItems,
   FlexBoxDirection,
   FlexBoxJustifyContent,
-  Link,
-  LinkDesign,
   ShellBar
 } from '@ui5/webcomponents-react';
 import './App.css';
+import MovieInfo from './Components/movieInfos/MovieInfo';
+import PageTitle from './Components/pageTitle/PageTitle';
+import SearchBar from './Components/searchBar/SearchBar';
 
 function App() {
   return (
@@ -19,9 +20,9 @@ function App() {
         justifyContent={FlexBoxJustifyContent.Center}
         alignItems={FlexBoxAlignItems.Center}
       >
-        <Link href="https://sap.github.io/ui5-webcomponents-react/" target="_blank" design={LinkDesign.Emphasized}>
-          Getting Started with UI5 Web Component for React
-        </Link>
+        <PageTitle />
+        <SearchBar />
+        <MovieInfo />
       </FlexBox>
     </>
   );
