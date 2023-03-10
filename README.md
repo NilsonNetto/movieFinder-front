@@ -1,8 +1,14 @@
 # MovieFinder
 
+![MovieFinderExample](https://user-images.githubusercontent.com/106768615/224383130-4c29ee77-1cac-4685-956c-286e76628790.jpeg)
+
 ## About
 
 MovieFinder is an app that you can search a movie title and read informations about the movie.
+
+You only need to search for a movie title in english!
+
+This app was built for the NTT DATA technical challenge
 
 ## Technologies
 
