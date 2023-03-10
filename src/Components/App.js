@@ -13,7 +13,10 @@ import SearchBar from './searchBar/SearchBar';
 
 function App() {
   return (
-    <>
+    <FlexBox
+      className='page-container'
+      direction={FlexBoxDirection.Column}
+    >
       <Header />
       <FlexBox
         className='main-container'
@@ -26,7 +29,7 @@ function App() {
         <MovieInfo />
       </FlexBox>
       <Footer />
-    </>
+    </FlexBox>
   );
 }
 
