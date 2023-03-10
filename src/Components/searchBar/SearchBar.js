@@ -25,7 +25,7 @@ export default function SearchBar() {
       className="search-bar-wrapper"
       justifyContent={FlexBoxJustifyContent.SpaceBetween}
     >
-      <Input className="search-input" placeholder="Search by film name" value={inputValue} onInput={(e) => setInputValue(e.target.value)}></Input>
+      <Input className="search-input" placeholder="Search by movie name" value={inputValue} onInput={(e) => setInputValue(e.target.value)}></Input>
       <Button className="search-button" onClick={() => getMovieTitle()}>Search</Button>
       <Button className="search-button" onClick={() => setInputValue('')}>Reset</Button>
     </FlexBox>
