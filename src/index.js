@@ -4,13 +4,18 @@ import { createRoot } from 'react-dom/client';
 import App from './Components/App';
 import './index.scss';
 import reportWebVitals from './reportWebVitals';
+import store from './Store/store';
+import { Provider } from 'react-redux';
+
 
 const container = document.getElementById('root');
 const root = createRoot(container);
 
 root.render(
   <ThemeProvider>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </ThemeProvider>
 );
 
