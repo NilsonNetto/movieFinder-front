@@ -7,5 +7,6 @@ export async function getSearch(name) {
 }
 
 export async function getMovie(name) {
-  return axios.get(`${apiURL}/movies/?t=${name}`);
+  const query = name.replaceAll(" ", "%20");
+  return axios.get(`${apiURL}/movies/?t=${query}`);
 }

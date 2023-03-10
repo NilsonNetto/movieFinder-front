@@ -14,8 +14,6 @@ export default function MovieInfo() {
     setMovieData(receivedMovieData);
   }, [receivedMovieData]);
 
-  console.log(movieData);
-
   return (
     <FlexBox
       className="movie-info-wrapper"

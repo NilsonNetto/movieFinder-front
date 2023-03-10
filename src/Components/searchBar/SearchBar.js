@@ -15,7 +15,6 @@ export default function SearchBar() {
     getMovie(inputValue)
       .then(res => {
         dispatch(setData(res.data));
-        console.log('sucesso');
       })
       .catch(res => {
         console.log(res.data);
