@@ -3,27 +3,67 @@
 .movie-info-wrapper{
   width: 100%;
   max-width: 800px;
+  height: 100%;
   background-color: App.$ligthBackgroundColor;
   color: App.$textColor;
   display: flex;
   
+  .empty-text{
+    font-size: 30px;
+    color: App.$textColor;
+  }
+
   .movie-texts{
     width: 60%;
     display: flex;
     flex-direction: column;
+    padding-right: 15px;
 
-    .favorite-button{
-      width: 150px;
-      background-color: #808080;
-      color: #FFFFFF;
-      border: 1px solid #808080;
+    .movie-title{
+      font-size: 40px;
+      font-weight: 700;
+      color: App.$whiteColor;
+    }
+
+    .movie-year{
+      font-size: 16px;
+      font-weight: 300;
+      color: App.$whiteColor;
+    }
+
+    .movie-plot{
+      font-size: 16px;
+      font-weight: 400;
+      color: App.$blackColor;
+      text-align: justify;
+      margin-top: 5px;
+    }
+
+    .infos-title{
+      font-size: 25px;
+      font-weight: 700;
+      color: App.$whiteColor;
+      margin-top: 20px;
+    }
+
+    .infos-text{
+      font-size: 16px;
+      font-weight: 500;
+      margin-top: 5px;
+      color: App.$blackColor;
     }
   }
   
   .movie-poster{
     width: 40%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    border-radius: 18px;
+    border: 2px solid App.$blackColor;
+    box-shadow: 4px 4px 4px 0 rgba($color: #000000, $alpha: 0.25);
+
+    .poster-image{
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
   }
 }

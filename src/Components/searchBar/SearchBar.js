@@ -1,7 +1,7 @@
 import "./searchBar.scss";
 import "@ui5/webcomponents/dist/Input.js";
 import "@ui5/webcomponents/dist/Button";
-import { Button, FlexBox, FlexBoxJustifyContent, Input } from "@ui5/webcomponents-react";
+import { Button, FlexBox, FlexBoxAlignItems, FlexBoxJustifyContent, Input } from "@ui5/webcomponents-react";
 import { useState } from "react";
 import { getMovie } from "../../Services/api";
 import { useDispatch } from 'react-redux';
@@ -27,11 +27,11 @@ export default function SearchBar() {
   return (
     <FlexBox
       className="search-bar-wrapper"
-      justifyContent={FlexBoxJustifyContent.SpaceBetween}
+      justifyContent={FlexBoxJustifyContent.Center}
+      alignItems={FlexBoxAlignItems.Center}
     >
       <Input className="search-input" placeholder="Search by movie name" value={inputValue} onInput={(e) => setInputValue(e.target.value)}></Input>
       <Button className="search-button" onClick={() => getMovieTitle()}>Search</Button>
-      <Button className="search-button" onClick={() => setInputValue('')}>Reset</Button>
     </FlexBox>
   );
 }
